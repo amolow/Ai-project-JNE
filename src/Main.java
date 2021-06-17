@@ -1,4 +1,9 @@
+import java.util.Scanner;  // Import the Scanner class
+
+
 /*
+
+
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -10,26 +15,156 @@
  */
 public class Main {
     public static void main(String[] args) {
-        Node node1 = new Node("a:Kebayoran Lama",0);
-        Node node2 = new Node("b:Kebayoran Center",0.5);
-        Node node3 = new Node("c:Agen Ban",5);
-        Node node4 = new Node("d:Radio Dalam",2);
-        Node node5 = new Node("e:Agen Bintaro Permai",4.5);
-        Node node6 = new Node("f:Kesehatan",4);
-        Node node7 = new Node("g:Fiyora",5);
-        Node node8 = new Node("h:Agen MRT Lebak Bulus",6);
-        Node node9 = new Node("i:Lebak Bulus Agent",7);
-        Node node10 = new Node("j:Refin",8);
-        Node node11 = new Node("k:Juang Amirain",10);
-        Node node12 = new Node("l:Agen Ripqi Hidayat",10.5);
-        Node node13 = new Node("m:Kemang Selatan",11);
-        Node node14 = new Node("n:Jl Margasatwa",11.5);
-        Node node15 = new Node("o:TB Simatupang",12);
-        Node node16 = new Node("p:Kantor Perwakilan Mampang",12.5);
-        Node node17 = new Node("q:Berkah Jaya",13);
-        Node node18 = new Node("r:Kantor Perwakilan Pasar Minggu",13.5);
-        Node node19 = new Node("s:Agen Pacorant Tebet",14);
-        Node node20 = new Node("t:Agen Asembaris",14.5);
+        Node node1 = new Node("1:Kebayoran Lama",0);
+        Node node2 = new Node("2:Kebayoran Center",0.5);
+        Node node3 = new Node("3:Agen Ban",5);
+        Node node4 = new Node("4:Radio Dalam",2);
+        Node node5 = new Node("5:Agen Bintaro Permai",4.5);
+        Node node6 = new Node("6:Kesehatan",4);
+        Node node7 = new Node("7:Fiyora",5);
+        Node node8 = new Node("8:Agen MRT Lebak Bulus",6);
+        Node node9 = new Node("9:Lebak Bulus Agent",7);
+        Node node10 = new Node("10:Refin",8);
+        Node node11 = new Node("11:Juang Amirain",10);
+        Node node12 = new Node("12:Agen Ripqi Hidayat",10.5);
+        Node node13 = new Node("13:Kemang Selatan",11);
+        Node node14 = new Node("14:Jl Margasatwa",11.5);
+        Node node15 = new Node("15:TB Simatupang",12);
+        Node node16 = new Node("16:Kantor Perwakilan Mampang",12.5);
+        Node node17 = new Node("17:Berkah Jaya",13);
+        Node node18 = new Node("18:Kantor Perwakilan Pasar Minggu",13.5);
+        Node node19 = new Node("19:Agen Pacorant Tebet",14);
+        Node node20 = new Node("20:Agen Asembaris",14.5);
+        
+        
+        
+    Scanner sc = new Scanner(System.in);  // Create a Scanner object
+
+        System.out.println("1: Kebayoran Lama");
+        System.out.println("2: Kebayoran Center");
+        System.out.println("3: Agen Ban");
+        System.out.println("4: Radio Dalam");
+        System.out.println("5: Agen Bintaro Permai");
+        System.out.println("6: Kesehatan");
+        System.out.println("7: Fiyora");
+        System.out.println("8: Agen MRT Lebak Bulus");
+        System.out.println("9: Lebak Bulus Agent");
+        System.out.println("10: Refin");
+        System.out.println("11: Juang Amirain");
+        System.out.println("12: Agen Ripqi Hidayat");
+        System.out.println("13: Kemang Selatan");
+        System.out.println("14: Jl Margasatwa");
+        System.out.println("15: TB Simatupang");
+        System.out.println("16: Kantor Perwakilan Mampang");
+        System.out.println("17: Berkah Jaya");
+        System.out.println("18: Kantor Perwakilan Pasar Minggu");
+        System.out.println("19: Agen Pacorant Tebet");
+        System.out.println("20: Agen Asembaris");
+        System.out.println(" ");
+        System.out.println("Pilih Tempat Awal Anda dengan mengetik nomor yang sesuai");
+    
+int month = sc.nextInt();
+        Node start = null;
+        switch (month) {
+            case 1:  start = node1;
+                     break;
+            case 2:  start = node2;
+                     break;
+            case 3:  start = node3;
+                     break;
+            case 4:  start = node4;
+                     break;
+            case 5:  start = node5;
+                     break;
+            case 6:  start = node6;
+                     break;
+            case 7:  start = node7;
+                     break;
+            case 8:  start = node8;
+                     break;
+            case 9:  start = node9;
+                     break;
+            case 10: start = node10;
+                     break;
+            case 11: start = node11;
+                     break;
+            case 12: start = node12;
+                     break;
+            case 13:  start = node13;
+                     break;
+            case 14:  start = node14;
+                     break;
+            case 15:  start = node15;
+                     break;
+            case 16:  start = node16;
+                     break;
+            case 17:  start = node17;
+                     break;
+            case 18:  start = node18;
+                     break;
+            case 19:  start = node19;
+                     break;
+            case 20:  start = node20;
+                     break;
+            default: start = node1;
+                     break;
+        }
+  
+
+        System.out.println(" ");
+        System.out.println("Pilih Tujuan Anda dengan mengetik nomor yang sesuai");
+        
+        
+        
+int months = sc.nextInt();
+        Node end = null;
+        switch (months) {
+            case 1:  end = node1;
+                     break;
+            case 2:  end = node2;
+                     break;
+            case 3:  end = node3;
+                     break;
+            case 4:  end = node4;
+                     break;
+            case 5:  end = node5;
+                     break;
+            case 6:  end = node6;
+                     break;
+            case 7:  end = node7;
+                     break;
+            case 8:  end = node8;
+                     break;
+            case 9:  end = node9;
+                     break;
+            case 10: end = node10;
+                     break;
+            case 11: end = node11;
+                     break;
+            case 12: end = node12;
+                     break;
+            case 13:  end = node13;
+                     break;
+            case 14:  end = node14;
+                     break;
+            case 15:  end = node15;
+                     break;
+            case 16:  end = node16;
+                     break;
+            case 17:  end = node17;
+                     break;
+            case 18:  end = node18;
+                     break;
+            case 19:  end = node19;
+                     break;
+            case 20:  end = node20;
+                     break;
+            default: end = node1;
+                     break;
+        }
+
+  
+
         
         node1.connect(new Edge(node2, 1.3));
         
@@ -53,7 +188,6 @@ public class Main {
         node8.connect(new Edge(node9, 2.5));
         
         node9.connect(new Edge(node11, 3.3));
-        node9.connect(new Edge(node12, 5.3));
         
         node10.connect(new Edge(node11, 1.2));
         
@@ -68,7 +202,8 @@ public class Main {
         
         node14.connect(new Edge(node15, 3.1));
         
-        node15.connect(new Edge(node15, 2.8));
+        
+        node15.connect(new Edge(node18, 2.8));
         
         node16.connect(new Edge(node19, 5));
         node16.connect(new Edge(node17, 2.4));
@@ -78,14 +213,14 @@ public class Main {
         
         node19.connect(new Edge(node20, 3.6));
         
-        
+
         
         AStarSearch astar = new AStarSearch();
-        astar.Astarsearch(node1, node16);
+        astar.Astarsearch(start, end);
         System.out.println();
-        System.out.print("Rutenya : ");
-        astar.printRute(node16);
+        System.out.print("Rute Tercepat Untuk sampai tujuan : ");
+        astar.printRute(end);
         System.out.println();
-        System.out.println("Costnya : "+astar.getCosttotal());
+        System.out.println("Jarak Yang Perlu Ditempuh : "+astar.getCosttotal() + " Km");
     }
 }

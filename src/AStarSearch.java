@@ -1,4 +1,5 @@
 
+
 import java.util.ArrayList;
 
 /*
@@ -66,7 +67,7 @@ public class AStarSearch {
             }
                       
                     
-            for(Edge e:best.getChildlist()){//budipradnyana
+            for(Edge e:best.getChildlist()){
                 Node child = e.getTargetnode();
                 double tempcost = e.getCost();
                 double tempGn = best.getGn()+ tempcost;
@@ -110,4 +111,6 @@ public class AStarSearch {
     public void setCosttotal(double costtotal) {
         this.costtotal = costtotal;
     }
+    
+
 }
